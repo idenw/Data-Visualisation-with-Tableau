@@ -1,0 +1,835 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1018.2303                               -->
+<workbook original-version='18.1' source-build='2020.3.2 (20203.20.1018.2303)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='RI_cleaned' inline='true' name='federated.10sipud1dlq7gq1batk910lm0vh8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='RI_cleaned' name='textscan.1qzrn20167s3c418k3zoh04r7q2q'>
+            <connection class='textscan' directory='C:/Users/mrl/Pictures/e- kurs/datascience/DA with python/DA-with-python/projects/Data-Visualisation-with-Tableau' filename='RI_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1qzrn20167s3c418k3zoh04r7q2q' name='RI_cleaned.csv' table='[RI_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='date' name='stop_date' ordinal='2' />
+            <column datatype='datetime' name='stop_time' ordinal='3' />
+            <column datatype='string' name='location_raw' ordinal='4' />
+            <column datatype='string' name='county_name' ordinal='5' />
+            <column datatype='string' name='county_fips' ordinal='6' />
+            <column datatype='string' name='fine_grained_location' ordinal='7' />
+            <column datatype='string' name='police_department' ordinal='8' />
+            <column datatype='string' name='driver_gender' ordinal='9' />
+            <column datatype='string' name='driver_age_raw' ordinal='10' />
+            <column datatype='string' name='driver_age' ordinal='11' />
+            <column datatype='string' name='driver_race_raw' ordinal='12' />
+            <column datatype='string' name='driver_race' ordinal='13' />
+            <column datatype='string' name='violation_raw' ordinal='14' />
+            <column datatype='string' name='violation' ordinal='15' />
+            <column datatype='boolean' name='search_conducted' ordinal='16' />
+            <column datatype='string' name='search_type_raw' ordinal='17' />
+            <column datatype='string' name='search_type' ordinal='18' />
+            <column datatype='boolean' name='contraband_found' ordinal='19' />
+            <column datatype='string' name='stop_outcome' ordinal='20' />
+            <column datatype='boolean' name='is_arrested' ordinal='21' />
+            <column datatype='string' name='stop_duration' ordinal='22' />
+            <column datatype='boolean' name='out_of_state' ordinal='23' />
+            <column datatype='boolean' name='drugs_related_stop' ordinal='24' />
+            <column datatype='string' name='district' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1qzrn20167s3c418k3zoh04r7q2q' name='RI_cleaned.csv' table='[RI_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='date' name='stop_date' ordinal='2' />
+            <column datatype='datetime' name='stop_time' ordinal='3' />
+            <column datatype='string' name='location_raw' ordinal='4' />
+            <column datatype='string' name='county_name' ordinal='5' />
+            <column datatype='string' name='county_fips' ordinal='6' />
+            <column datatype='string' name='fine_grained_location' ordinal='7' />
+            <column datatype='string' name='police_department' ordinal='8' />
+            <column datatype='string' name='driver_gender' ordinal='9' />
+            <column datatype='string' name='driver_age_raw' ordinal='10' />
+            <column datatype='string' name='driver_age' ordinal='11' />
+            <column datatype='string' name='driver_race_raw' ordinal='12' />
+            <column datatype='string' name='driver_race' ordinal='13' />
+            <column datatype='string' name='violation_raw' ordinal='14' />
+            <column datatype='string' name='violation' ordinal='15' />
+            <column datatype='boolean' name='search_conducted' ordinal='16' />
+            <column datatype='string' name='search_type_raw' ordinal='17' />
+            <column datatype='string' name='search_type' ordinal='18' />
+            <column datatype='boolean' name='contraband_found' ordinal='19' />
+            <column datatype='string' name='stop_outcome' ordinal='20' />
+            <column datatype='boolean' name='is_arrested' ordinal='21' />
+            <column datatype='string' name='stop_duration' ordinal='22' />
+            <column datatype='boolean' name='out_of_state' ordinal='23' />
+            <column datatype='boolean' name='drugs_related_stop' ordinal='24' />
+            <column datatype='string' name='district' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[stop_date]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>stop_date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[stop_time]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>stop_time</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location_raw</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location_raw]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>location_raw</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county_name]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>county_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county_fips</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county_fips]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>county_fips</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fine_grained_location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fine_grained_location]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>fine_grained_location</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>police_department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[police_department]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>police_department</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>driver_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[driver_gender]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>driver_gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>driver_age_raw</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[driver_age_raw]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>driver_age_raw</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>driver_age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[driver_age]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>driver_age</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>driver_race_raw</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[driver_race_raw]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>driver_race_raw</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>driver_race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[driver_race]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>driver_race</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>violation_raw</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[violation_raw]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>violation_raw</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>violation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[violation]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>violation</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>search_conducted</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[search_conducted]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>search_conducted</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>search_type_raw</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[search_type_raw]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>search_type_raw</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>search_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[search_type]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>search_type</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contraband_found</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[contraband_found]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>contraband_found</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_outcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stop_outcome]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>stop_outcome</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_arrested</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_arrested]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>is_arrested</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_duration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stop_duration]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>stop_duration</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>out_of_state</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[out_of_state]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>out_of_state</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drugs_related_stop</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[drugs_related_stop]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>drugs_related_stop</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>district</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[district]</local-name>
+            <parent-name>[RI_cleaned.csv]</parent-name>
+            <remote-alias>district</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='stop_duration_int' datatype='string' datatype-customized='true' default-role='measure' name='[Calculation_534802500571340800]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='STR(IF [stop_duration]=&apos;0-15 Min&apos; then &apos;15&apos;&#13;&#10;ELSEIF [stop_duration]=&apos;16-30 Min&apos; then &apos;30&apos;&#13;&#10;ELSEIF [stop_duration]=&apos;30+ Min&apos; then &apos;45&apos;&#13;&#10;else &apos;N&apos;&#13;&#10;END)' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='RI_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]' role='measure' type='quantitative' />
+      <column datatype='string' name='[county_fips]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[county_name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='Hour' datatype='datetime' name='[stop_time]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-hidden-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='id' />
+        <field-sort-custom-order field='state' />
+        <field-sort-custom-order field='stop_date' />
+        <field-sort-custom-order field='stop_time' />
+        <field-sort-custom-order field='location_raw' />
+        <field-sort-custom-order field='county_name' />
+        <field-sort-custom-order field='county_fips' />
+        <field-sort-custom-order field='fine_grained_location' />
+        <field-sort-custom-order field='police_department' />
+        <field-sort-custom-order field='driver_gender' />
+        <field-sort-custom-order field='driver_age_raw' />
+        <field-sort-custom-order field='driver_age' />
+        <field-sort-custom-order field='driver_race_raw' />
+        <field-sort-custom-order field='driver_race' />
+        <field-sort-custom-order field='violation_raw' />
+        <field-sort-custom-order field='violation' />
+        <field-sort-custom-order field='search_conducted' />
+        <field-sort-custom-order field='search_type_raw' />
+        <field-sort-custom-order field='search_type' />
+        <field-sort-custom-order field='contraband_found' />
+        <field-sort-custom-order field='stop_outcome' />
+        <field-sort-custom-order field='is_arrested' />
+        <field-sort-custom-order field='stop_duration' />
+        <field-sort-custom-order field='Calculation_534802500571340800' />
+        <field-sort-custom-order field='out_of_state' />
+        <field-sort-custom-order field='drugs_related_stop' />
+        <field-sort-custom-order field='district' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='RI_cleaned.csv' id='RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E'>
+            <properties context=''>
+              <relation connection='textscan.1qzrn20167s3c418k3zoh04r7q2q' name='RI_cleaned.csv' table='[RI_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='id' ordinal='0' />
+                  <column datatype='string' name='state' ordinal='1' />
+                  <column datatype='date' name='stop_date' ordinal='2' />
+                  <column datatype='datetime' name='stop_time' ordinal='3' />
+                  <column datatype='string' name='location_raw' ordinal='4' />
+                  <column datatype='string' name='county_name' ordinal='5' />
+                  <column datatype='string' name='county_fips' ordinal='6' />
+                  <column datatype='string' name='fine_grained_location' ordinal='7' />
+                  <column datatype='string' name='police_department' ordinal='8' />
+                  <column datatype='string' name='driver_gender' ordinal='9' />
+                  <column datatype='string' name='driver_age_raw' ordinal='10' />
+                  <column datatype='string' name='driver_age' ordinal='11' />
+                  <column datatype='string' name='driver_race_raw' ordinal='12' />
+                  <column datatype='string' name='driver_race' ordinal='13' />
+                  <column datatype='string' name='violation_raw' ordinal='14' />
+                  <column datatype='string' name='violation' ordinal='15' />
+                  <column datatype='boolean' name='search_conducted' ordinal='16' />
+                  <column datatype='string' name='search_type_raw' ordinal='17' />
+                  <column datatype='string' name='search_type' ordinal='18' />
+                  <column datatype='boolean' name='contraband_found' ordinal='19' />
+                  <column datatype='string' name='stop_outcome' ordinal='20' />
+                  <column datatype='boolean' name='is_arrested' ordinal='21' />
+                  <column datatype='string' name='stop_duration' ordinal='22' />
+                  <column datatype='boolean' name='out_of_state' ordinal='23' />
+                  <column datatype='boolean' name='drugs_related_stop' ordinal='24' />
+                  <column datatype='string' name='district' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='1-Number of Records'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='RI_cleaned' name='federated.10sipud1dlq7gq1batk910lm0vh8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10sipud1dlq7gq1batk910lm0vh8'>
+            <_.fcp.ObjectModelTableType.true...column caption='RI_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='RI_cleaned.csv' datatype='integer' name='[__tableau_internal_object_id__].[RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10sipud1dlq7gq1batk910lm0vh8].[__tableau_internal_object_id__].[cnt:RI_cleaned.csv_31E1949DB23843CF8754EDCB6101EA8E:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BFCD3AD7-2619-40E1-8EB0-931A2BB1756E}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='RI_cleaned' name='federated.10sipud1dlq7gq1batk910lm0vh8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10sipud1dlq7gq1batk910lm0vh8'>
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[stop_duration]' derivation='None' name='[none:stop_duration:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[stop_duration]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10sipud1dlq7gq1batk910lm0vh8].[none:stop_duration:nk]</rows>
+        <cols>[federated.10sipud1dlq7gq1batk910lm0vh8].[ctd:id:qk]</cols>
+      </table>
+      <simple-id uuid='{B1BC05D4-F390-499D-A78D-9101AEC4A24F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='1-Number of Records'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{AF8B9019-FABB-46B0-85B5-9B10705FC904}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10sipud1dlq7gq1batk910lm0vh8].[cnt:Calculation_534802500571340800:ok]</field>
+            <field>[federated.10sipud1dlq7gq1batk910lm0vh8].[hr:stop_time:ok]</field>
+            <field>[federated.10sipud1dlq7gq1batk910lm0vh8].[none:id:nk]</field>
+            <field>[federated.10sipud1dlq7gq1batk910lm0vh8].[none:stop_duration:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C49FDC6D-614E-472B-8E83-37536DA8479F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='24' name='1-Number of Records' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADx0lEQVRYhe1Y3yt7bxx/fc6O+bka2i5IuMWdMwybEcqVskUuXHAjtMv9Ce6QFhdSRHOj
+      qIWWslppoZQ2bigmcfLj+LUN++Gc9+fu1CL61r6di89e9dR5zrv363k9r+c573edP0RE+IfB
+      KC1AaWQMUFqA0sgYoLQApZExQGkBSiNjgNIClEbGAKUFKI2MAUoLUBppMyAYDKKlpQUcx8lj
+      Z2cHACBJEtbX12E2m2E0GjExMYFEIgEASCQSmJqaQlNTE4xGI8bHx/H+/v7tGvv7++jp6QHH
+      cejq6sLR0ZHMv7y8jLa2NtTV1WFgYAAXFxdyHs/zmJqags1mQzAYTCWlNMHr9dLCwsK3sUAg
+      QKOjo3Rzc0PhcJgcDge53W4iIlpZWaHp6Wl6e3ujRCJB8/PzNDs7+4Xj9PSUBgYG6Pj4mERR
+      pPv7exIEgYiIdnd3yeFw0NPTE4miSF6vl0ZGRuj19ZXu7u7IbreT3++npaUlCgQCKbxpuwG3
+      t7coKyv7Nubz+dDb24uSkhJoNBoMDQ3h8PAQn5+f4HkeNpsNeXl5yMrKQn9/P15eXr5wbG9v
+      w2azoaamBgzDQKfTobi4GABwdnaGzs5OFBYWgmEYWCwWVFRUIBaLQa/Xw+l0orGxESqV6gtv
+      2gyIRCLQ6/XfxmKxGCorK+V5aWkpCgoK8PHxgezsbLjdbiSTSUiShGg0inA4nJIfj8chCAI4
+      jvuWv7m5GR6PB4IgQJIk+Hw+sCyLoqKiX3Wz/2GPP2J4eFh+fnh4wMzMDKqqqtDX1/djnt1u
+      T5lrNBowTOq5fH5+QhRFPDw8QKfTQaVSwefzYXNzU64ZWq1WPmGWZfH4+Ih4PA6W/XmL/0sX
+      0Ol0sFqtciHKyclBKBSS4zc3N4hGo8jNzf2Se3V1hWQymfIuPz8fer0e2dnZyMrKAsMwqK+v
+      h1qtRiQSgcfjQXd3t/wJmM1m5OTk4Pz8/FetaTHg/v4e4+PjuLy8hCRJeH5+hsvlQnV1NQDA
+      YrFgdXUVPM8jEolgYWEBHMeBZVkIgoDr62tIkgSe5zE5OYmOjo4va9TX12NxcVG+5gcHB1Cr
+      1SgqKkJ5eTm2trYQDochSRJOTk4QCoWg1Wp/F5+ODiCKIvn9frJarWQwGMhkMtH8/DzF43E5
+      vra2RiaTiRoaGmh2dlaOhUIh6uvrI4PBQK2treRyuUgURYpGozQ2NiZXbVEUaWNjg9rb28lg
+      MNDg4CDxPE9ERPF4nJxOJ5lMJjIYDGS1Wmlvb0/uQGazmWpra1PG3NwcERH9Icr8Ff6n8Rcx
+      3rRkYGFAdAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
